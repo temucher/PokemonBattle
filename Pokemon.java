@@ -1,3 +1,5 @@
+package PokemonBattle;
+
 import java.util.ArrayList;
 
 public class Pokemon {
@@ -21,5 +23,10 @@ public class Pokemon {
 		this.moveList = moveList;
 	}
 	//methods 
-	
+	public static void attack(Move attackMove, Pokemon enemy) {
+		
+	}
+	public void healthDamage(int damage) {
+		this.health = this.health - damage;
+	}
 }

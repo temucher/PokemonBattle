@@ -10,30 +10,42 @@ public class PokemonBattle {
 		//Not really doing much with speed right now (except agility and confuseRay), probably will change this later
 		//damage and pp somewhat arbitrary at the moment, will need to balance later
 		
+		//psychic moves
 		Move agility = new Move("Agility", "Psychic", 30, 0, 20);//raises this pokemon's speed
 		Move rest = new Move("Rest", "Psychic", 10, 30, 0);//heals this pokemon, doesnt do damage
-		
+		//water moves
 		Move bubbleBeam = new Move("Bubble Beam", "Water", 20, 15, 0);
 		Move waterGun = new Move("Water Gun", "Water", 25, 20, 0);
-		
+		//fire moves
 		Move ember = new Move("Ember", "Fire", 25, 20, 0);
 		Move fireBlast = new Move("Fire Blast", "Fire", 40, 35, 0);
-		
+		//electric moves
 		Move thunder = new Move("Thunder", "Electric", 10, 10, 0);
 		Move thunderbolt = new Move("Thunderbolt", "Electric", 30, 30, 0);
-		
+		//ghost moves
 		Move lick = new Move("Lick", "Ghost", 30, 30, 0);
 		Move confuseRay = new Move("Confuse Ray", "Ghost", 10, 0, -10);//lowers opponents speed
 		
 		
-		//Not sure if I will use this idea
+		//Not sure if I will use this idea -- potentially use a hashMap for easier search? and then put into individual arrayLists for each pokemon
 		//Creating a master move list for each pokemon to pull moves from
 		//ArrayList<Move> masterMoveList = new ArrayList<Move>();
 		//masterMoveList.add()
 		
 		
 		//Creating the 10 Pokemon: 2 Psychic, 2 Water, 2 Fire, 2 Electric, 2 Ghost
-		//Pokemon 
+		//The moves each pokemon has doesn't make a whole lot of sense right now (e.g. Drowzee can't even fight really)
+		ArrayList<Move> psychicMoves = new ArrayList<>();
+		psychicMoves.add(agility);
+		psychicMoves.add(rest);
+		Pokemon drowzee = new Pokemon("Drowzee", "Psychic", 60, 42, psychicMoves);
+		Pokemon kadabra = new Pokemon("Kadabra", "Psychic", 40, 80, psychicMoves);
+		
+		ArrayList<Move> waterMoves = new ArrayList<>();
+		waterMoves.add(bubbleBeam);
+		waterMoves.add(waterGun);
+		
+		
 	
 		//user input to get names
 		Scanner scan = new Scanner(System.in);

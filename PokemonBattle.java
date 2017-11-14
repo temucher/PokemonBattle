@@ -44,7 +44,26 @@ public class PokemonBattle {
 		ArrayList<Move> waterMoves = new ArrayList<>();
 		waterMoves.add(bubbleBeam);
 		waterMoves.add(waterGun);
+		Pokemon poliwhirl = new Pokemon("Poliwhirl", "Water", 65, 80, waterMoves);
+		Pokemon tentacruel = new Pokemon("Tentacruel", "Water", 70, 45, waterMoves);
 		
+		ArrayList<Move> fireMoves = new ArrayList<>();
+		fireMoves.add(ember);
+		fireMoves.add(fireBlast);
+		Pokemon rapidash = new Pokemon("Rapidash", "Fire", 55, 90, fireMoves);
+		Pokemon growlith = new Pokemon("Growlith", "Fire", 50, 85, fireMoves);
+		
+		ArrayList<Move> electricMoves = new ArrayList<>();
+		electricMoves.add(thunder);
+		electricMoves.add(thunderbolt);
+		Pokemon magneton = new Pokemon("Magneton", "Electric", 50, 85, electricMoves);
+		Pokemon electabuzz = new Pokemon("Electabuzz", "Electric", 65, 75, electricMoves);
+		
+		ArrayList<Move> ghostMoves = new ArrayList<>();
+		ghostMoves.add(lick);
+		ghostMoves.add(confuseRay);
+		Pokemon haunter = new Pokemon("Haunter", "Ghost", 45, 90, ghostMoves);
+		Pokemon gengar = new Pokemon("Gengar", "Ghost", 60, 80, ghostMoves);
 		
 	
 		//user input to get names

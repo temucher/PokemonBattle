@@ -1,5 +1,3 @@
-package PokemonBattle;
-
 public class Move {
 	String name;
 	String type;

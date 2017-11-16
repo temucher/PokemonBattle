@@ -1,5 +1,3 @@
-package PokemonBattle;
-
 import java.util.ArrayList;
 
 public class Pokemon {

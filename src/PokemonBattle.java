@@ -416,6 +416,7 @@ public class PokemonBattle {
 				}
 			}
 		}
+		System.out.println();
 		scan.close();
 	}
 }
